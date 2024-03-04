@@ -1,5 +1,3 @@
-<div style="float: left;"><img src="./public/icon.png" width="38" height="38"></div>
+<h1> <img align="left" width="38" height="38" src="/public/icon.png"> ToDo </h1>
 
-# Todo
-
-Todo application in Solid.js and TypeScript
+## Todo application in Solid.js and TypeScript

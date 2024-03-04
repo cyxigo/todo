@@ -1,2 +1,3 @@
-# todo
- Todo application in Solid.js and TypeScript
+# Todo
+
+Todo application in Solid.js and TypeScript

@@ -2,7 +2,6 @@
 
 ### Todo application in Solid.js and TypeScript
 
-## Some screenshots
-![image](https://github.com/cyxigo/todo/assets/126170697/82fb0747-a182-4433-8d50-e5fde7377478)
-![image](https://github.com/cyxigo/todo/assets/126170697/f2771a71-0240-49b7-bf4c-1c5323a205fd)
-![image](https://github.com/cyxigo/todo/assets/126170697/d82cde4f-a194-4c52-992d-e7eaa03c6196)
+## Screenshots
+![image](https://github.com/cyxigo/todo/assets/126170697/04f96cf3-3c18-4e81-afe0-3db94fe3a2a5)
+![image](https://github.com/cyxigo/todo/assets/126170697/3aa916fa-67eb-453d-bc86-81cf3fd191b1)

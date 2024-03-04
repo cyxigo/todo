@@ -104,9 +104,28 @@
   justify-content: center;
 }
 
+@keyframes appear {
+  0% {
+    transform: scale(1.05);
+  }
+  30% {
+    transform: scale(1.1);
+  }
+  70% {
+    transform: scale(0.95);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
 .todoLabel {
   color: white;
   transition: all ease 0.2s;
+  animation-name: appear;
+  animation-duration: 0.3s;
+  animation-timing-function: linear;
+  animation-iteration-count: 1;
 }
 
 .todoLabel:hover {
@@ -124,6 +143,10 @@
   transition: all ease 0.2s;
   position: relative;
   text-decoration: line-through;
+  animation-name: appear;
+  animation-duration: 0.3s;
+  animation-timing-function: linear;
+  animation-iteration-count: 1;
 }
 
 .todoLabelCompleted:hover {
@@ -134,21 +157,6 @@
 
 .todoLabelCompleted:active {
   transform: scale(0.95);
-}
-
-@keyframes showRemoveButton {
-  0% {
-    transform: scale(1.05);
-  }
-  30% {
-    transform: scale(1.1);
-  }
-  70% {
-    transform: scale(0.95);
-  }
-  100% {
-    transform: scale(1);
-  }
 }
 
 .buttonRemove {
@@ -163,7 +171,7 @@
   background-color: red;
   width: 100px;
   height: 60px;
-  animation-name: showRemoveButton;
+  animation-name: appear;
   animation-duration: 0.3s;
   animation-timing-function: linear;
   animation-iteration-count: 1;

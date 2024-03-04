@@ -21,11 +21,19 @@ const ButtonsComponent: Component = () => {
 
   return (
     <div class={styles.wrapper}>
-      <button class={styles.buttonDelete} onClick={handleDeleteClick}>
+      <button
+        title="Delete cookies"
+        class={styles.buttonDelete}
+        onClick={handleDeleteClick}
+      >
         {" "}
         Delete cookies{" "}
       </button>
-      <button class={styles.buttonGit} onClick={handleGitClick}>
+      <button
+        title="Open ToDo page on GitHub"
+        class={styles.buttonGit}
+        onClick={handleGitClick}
+      >
         {" "}
         GitHub{" "}
       </button>

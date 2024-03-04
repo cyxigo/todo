@@ -1,0 +1,183 @@
+.wrapper {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  color: white;
+  transition: all ease 0.2s;
+  font-size: 60px;
+}
+
+.title:hover {
+  text-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2);
+  transform: scale(1.05);
+}
+
+.subTitle {
+  transition: all ease 0.2s;
+  color: rgba(0, 0, 0, 0.2);
+}
+
+.subTitle:hover {
+  cursor: pointer;
+  text-shadow: 2px 2px 12px rgba(255, 255, 255, 0.1);
+  transform: scale(1.05);
+}
+
+.subTitleHidden {
+  display: none;
+}
+
+.buttonAdd {
+  font-size: large;
+  font-weight: 500;
+  transition: all ease 0.2s;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 12px;
+  box-shadow: 1px 1px 11px -6px rgba(0, 0, 0, 0.75);
+  background-color: blueviolet;
+  width: 150px;
+  height: 50px;
+}
+
+.buttonAdd:hover {
+  box-shadow: 2px 2px 12px -6px rgba(0, 0, 0, 0.75);
+  transform: scale(1.05);
+}
+
+.buttonAdd:active {
+  transform: scale(0.95);
+}
+
+.buttonRemoveAll {
+  font-size: large;
+  font-weight: 500;
+  transition: all ease 0.2s;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 12px;
+  margin: 8px;
+  box-shadow: 1px 1px 11px -6px rgba(0, 0, 0, 0.75);
+  background-color: red;
+  width: 150px;
+  height: 50px;
+}
+
+.buttonRemoveAll:hover {
+  box-shadow: 2px 2px 12px -6px rgba(0, 0, 0, 0.75);
+  transform: scale(1.05);
+}
+
+.buttonRemoveAll:active {
+  transform: scale(0.95);
+}
+
+.input {
+  transition: all ease 0.2s;
+  font-weight: 500;
+  border-radius: 7px;
+  border: none;
+  padding: 5px;
+  margin: 8px;
+  width: 400px;
+  height: 50px;
+}
+
+.input:hover {
+  box-shadow: 2px 2px 12px -6px rgba(0, 0, 0, 0.75);
+  transform: scale(1.05);
+}
+
+.todoWrapper {
+  font-weight: 500;
+  font-size: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.todoLabel {
+  color: white;
+  transition: all ease 0.2s;
+}
+
+.todoLabel:hover {
+  cursor: pointer;
+  text-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2);
+  transform: scale(1.05);
+}
+
+.todoLabel:active {
+  transform: scale(0.95);
+}
+
+.todoLabelCompleted {
+  color: white;
+  transition: all ease 0.2s;
+  position: relative;
+  text-decoration: line-through;
+}
+
+.todoLabelCompleted:hover {
+  cursor: pointer;
+  text-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2);
+  transform: scale(1.05);
+}
+
+.todoLabelCompleted:active {
+  transform: scale(0.95);
+}
+
+@keyframes showRemoveButton {
+  0% {
+    transform: scale(1.05);
+  }
+  30% {
+    transform: scale(1.1);
+  }
+  70% {
+    transform: scale(0.95);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.buttonRemove {
+  font-size: large;
+  font-weight: 500;
+  transition: all ease 0.2s;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 12px;
+  box-shadow: 1px 1px 11px -6px rgba(0, 0, 0, 0.75);
+  background-color: red;
+  width: 100px;
+  height: 60px;
+  animation-name: showRemoveButton;
+  animation-duration: 0.3s;
+  animation-timing-function: linear;
+  animation-iteration-count: 1;
+}
+
+.buttonRemove:hover {
+  box-shadow: 2px 2px 12px -6px rgba(0, 0, 0, 0.75);
+  transform: scale(1.05);
+}
+
+.buttonRemove:active {
+  transform: scale(0.95);
+}
+
+.buttonRemoveHidden {
+  display: none;
+}

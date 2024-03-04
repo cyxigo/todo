@@ -1,0 +1,5 @@
+body {
+  user-select: none;
+  background-color: rgb(230, 180, 255);
+  overflow: hidden;
+}

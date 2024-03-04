@@ -1,6 +1,7 @@
-import { Component, For, createSignal } from "solid-js";
+import { Component, For, createEffect, createSignal } from "solid-js";
 
 import styles from "./style.module.css";
+import { setCookie, getCookie } from "../utils/cookie";
 
 interface Todo {
   id: number;
@@ -17,6 +18,22 @@ const ToDoListComponent: Component = () => {
     },
   ]);
   const [newTodoLabel, setNewTodoLabel] = createSignal<string>("Unnamed todo");
+
+  try {
+    setTodos(JSON.parse(getCookie("todos")));
+  } catch {
+    setTodos([
+      {
+        id: 2,
+        text: 'To create a new todo, write its title below and click "Add todo"',
+        completed: false,
+      },
+    ]);
+  }
+
+  createEffect(() => {
+    setCookie("todos", JSON.stringify(todos()));
+  });
 
   function handleOnSubTitleClick() {
     const newTodo: Todo = {

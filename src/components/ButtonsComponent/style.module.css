@@ -1,0 +1,51 @@
+.wrapper {
+  position: absolute;
+  width: 55rem;
+  height: 55rem;
+  left: 1rem;
+  bottom: -51rem;
+}
+
+.buttonDelete {
+  color: white;
+  transition: all ease 0.2s;
+  background-color: red;
+  font-size: large;
+  font-weight: 500;
+  margin: 4px;
+  padding: 9px;
+  box-shadow: 1px 1px 11px -6px rgba(0, 0, 0, 0.75);
+  border: none;
+  border-radius: 8px;
+}
+
+.buttonGit {
+  color: white;
+  transition: all ease 0.2s;
+  background-color: rgb(55, 55, 55);
+  font-size: large;
+  font-weight: 500;
+  margin: 4px;
+  padding: 9px;
+  box-shadow: 1px 1px 11px -6px rgba(0, 0, 0, 0.75);
+  border: none;
+  border-radius: 8px;
+}
+
+.buttonDelete:hover {
+  box-shadow: 2px 2px 12px -6px rgba(0, 0, 0, 0.75);
+  transform: scale(1.05);
+}
+
+.buttonGit:hover {
+  box-shadow: 2px 2px 12px -6px rgba(0, 0, 0, 0.75);
+  transform: scale(1.05);
+}
+
+.buttonDelete:active {
+  transform: scale(0.95);
+}
+
+.buttonGit:active {
+  transform: scale(0.95);
+}

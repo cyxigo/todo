@@ -9,26 +9,20 @@ interface Todo {
   completed: boolean;
 }
 
+const DefaultTodo: Todo = {
+  id: 2,
+  text: 'To create a new todo, write its title below and click "Add todo"',
+  completed: false,
+};
+
 const ToDoListComponent: Component = () => {
-  const [todos, setTodos] = createSignal<Todo[]>([
-    {
-      id: 2,
-      text: 'To create a new todo, write its title below and click "Add todo"',
-      completed: false,
-    },
-  ]);
+  const [todos, setTodos] = createSignal<Todo[]>([DefaultTodo]);
   const [newTodoLabel, setNewTodoLabel] = createSignal<string>("Unnamed todo");
 
   try {
     setTodos(JSON.parse(getCookie("todos")));
   } catch {
-    setTodos([
-      {
-        id: 2,
-        text: 'To create a new todo, write its title below and click "Add todo"',
-        completed: false,
-      },
-    ]);
+    setTodos([DefaultTodo]);
   }
 
   createEffect(() => {

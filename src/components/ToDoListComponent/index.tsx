@@ -10,7 +10,7 @@ interface Todo {
 }
 
 const DefaultTodo: Todo = {
-  id: 2,
+  id: 0,
   text: 'To create a new todo, write its title below and click "Add todo"',
   completed: false,
 };

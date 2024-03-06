@@ -26,16 +26,14 @@ const ButtonsComponent: Component = () => {
         class={styles.buttonDelete}
         onClick={handleDeleteClick}
       >
-        {" "}
-        Delete cookies{" "}
+        Delete cookies
       </button>
       <button
         title="Open ToDo page on GitHub"
         class={styles.buttonGit}
         onClick={handleGitClick}
       >
-        {" "}
-        GitHub{" "}
+        GitHub
       </button>
     </div>
   );

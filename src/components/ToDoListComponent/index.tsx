@@ -103,16 +103,14 @@ const ToDoListComponent: Component = () => {
   return (
     <div class={styles.wrapper}>
       <h1 title="Title, so what did you want to see here?" class={styles.title}>
-        {" "}
-        Your todos:{" "}
+        Your todos:
       </h1>
       <h2
         title="Add new todo"
         class={todos().length === 0 ? styles.subTitle : styles.subTitleHidden}
         onClick={handleOnSubTitleClick}
       >
-        {" "}
-        It's kind of empty in here..{" "}
+        It's kind of empty in here..
       </h2>
       <For each={todos()}>
         {(todo) => (
@@ -157,9 +155,7 @@ const ToDoListComponent: Component = () => {
         onChange={handleTodoLabelChange}
         class={styles.input}
         placeholder="Write the title of the todo here"
-      >
-        {" "}
-      </input>
+      ></input>
       <button
         title="Add todo"
         class={styles.buttonAdd}
